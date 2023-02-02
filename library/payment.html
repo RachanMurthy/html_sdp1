@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>
+            payment
+        </title>
+
+        <style>
+
+            .form-group 
+            {
+                margin-bottom: 16px;
+            }
+
+            .Submit
+            {
+                margin-top: 8px;
+            }
+
+        </style>
+
+        <script>
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1>Payment</h1>
+
+        <div class="form-group">
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+              <option value="credit">Credit</option>
+              <option value="debit">Debit</option>
+            </select>
+        </div>
+          
+
+        <form action="payment_accept.html">
+            <div class="form-group">
+              <label for="card-number">Card Number:</label>
+              <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="Expiration Date:">Expiration Date:</label>
+                <input type="date" id="DExpiration Date" name="Expiration Date" required>
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+
+          <form action="book_detail.html">
+            <div class="Submit">
+                <input type="submit" value="Cancel">
+            </div>
+          
+    </body>
+
+</html>
